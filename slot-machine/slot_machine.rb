@@ -12,7 +12,7 @@ class SlotMachine
     if @reels.uniq.length == 1
       # How can i get the index + 1 of the @reels[0] emoji??
       (@emojis.index(@reels[0]) + 1) * 10
-    elsif @reels.uniq.length == 2
+    elsif @reels.uniq.length == 2 && @reels.include?('🤩')
       # ⬇️ THIS IS BIT OF A HACK ⬇️
       # When there's only two emojis, and if we sort them and take the middle one, that emoji
       # is guaranteed to be the one that is repeated
