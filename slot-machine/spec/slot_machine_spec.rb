@@ -31,6 +31,7 @@ describe SlotMachine do
     # fails
     test_scenario(%w[7️⃣ 🍒 🤩], 0)
     test_scenario(%w[🍒 🛎️ ⭐️], 0)
+    test_scenario(%w[⭐️ 🛎️ ⭐️], 0)
   end
 
   describe '#play' do
