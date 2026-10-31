@@ -1,0 +1,5 @@
+id,name,age,weight,sickness,cured,room_id
+1,Vu,30,80,fever,FALSE,1
+2,Scooter,30,80,common cold,TRUE,2
+3,Noemi,20,70,broken arm,TRUE,1
+4,Vu,40,50,fever,FALSE,3
