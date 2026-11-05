@@ -1,0 +1,42 @@
+class MessageRouter
+  def initialize(messages_controller)
+    @messages_controller = messages_controller
+    @running = true
+  end
+
+  def run
+    puts "Welcome to WagonGPT 🚌"
+    puts "           --           "
+
+    while @running
+      display_tasks
+      action = gets.chomp.to_i
+      print `clear`
+      route_action(action)
+    end
+  end
+
+  private
+
+  def route_action(action)
+    case action
+    when 1 then @messages_controller.list
+    when 2 then @messages_controller.add
+    when 8 then stop
+    else
+      puts "Please press 1, 2 or 8"
+    end
+  end
+
+  def stop
+    @running = false
+  end
+
+  def display_tasks
+    puts ""
+    puts "What do you want to do next?"
+    puts "1 - List all messages"
+    puts "2 - Add a new message"
+    puts "8 - Stop and exit"
+  end
+end
