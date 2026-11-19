@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card {
+    width: 400px;
+}
+
+/* ---------- image area ---------- */
+
+.card-img {
+    background-image: url("https://cdn.dribbble.com/userupload/49666805/file/fd0e985634b2a04e0c983e7db5c3e503.jpg?resize=752x564&vertical=center");
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    border-radius: 8px;
+    /* push .card-img-bottom down to the bottom of the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.card-img-bottom {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img-bottom h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* select i tag inside .card-img-bottom */
+.card-img-bottom i {
+    background-color: white;
+    color: black;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* ---------- info area ---------- */
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.card-info p {
+    margin: 0;
+}
+
+.card-author,
+.card-stats,
+.icon-and-num {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card-stats {
+    gap: 0.75rem;
+    color: slategrey;
+}
+
+.icon-and-num {
+    gap: 0.25rem;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: whitesmoke;
+}
+
+.card-author p {
+    font-weight: bold;
+}
+
+.card-author button {
+    background-color: whitesmoke;
+    color: slategrey;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 0.625rem;
+    font-weight: bold;
+}
