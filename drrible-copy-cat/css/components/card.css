@@ -1,0 +1,20 @@
+.card {
+  background-color: #f7f7f7;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.card h2 {
+  text-transform: uppercase;
+}
+
+.card h3 {
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+.card li {
+  padding: 10px;
+  /* list-style: none; */
+}
