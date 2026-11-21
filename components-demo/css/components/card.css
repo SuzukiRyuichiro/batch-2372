@@ -1,0 +1,48 @@
+.card-category {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  font-weight: 700;
+  height: 200px;
+  max-width: 320px;
+  border-radius: 0.25rem;
+  font-size: 24px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-product {
+  display: flex;
+  background-color: whitesmoke;
+  max-width: 600px;
+}
+
+.card-product > img {
+  width: 120px;
+  height: 120px;
+}
+
+.card-product-infos {
+  padding-left: 3rem;
+}
+
+.card-trip {
+  max-width: 600px;
+  background-color: whitesmoke;
+}
+
+.card-trip > img {
+  width: 100%;
+}
+.card-trip-infos {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  align-items: flex-end;
+}
+
+.card-trip-infos > div > p {
+  color: grey;
+}

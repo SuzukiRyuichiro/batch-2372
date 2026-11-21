@@ -1,0 +1,13 @@
+.btn {
+  background-color: purple;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: darkblue;
+}
